@@ -1,4 +1,4 @@
-// Simple scroll animation
+
 document.querySelectorAll("nav a").forEach(link => {
   link.addEventListener("click", function(e) {
     e.preventDefault();
@@ -7,7 +7,7 @@ document.querySelectorAll("nav a").forEach(link => {
   });
 });
 
-// Example: Highlight project cards on hover
+
 document.querySelectorAll(".project-card").forEach(card => {
   card.addEventListener("mouseenter", () => {
     card.style.transform = "scale(1.05)";
@@ -18,18 +18,18 @@ document.querySelectorAll(".project-card").forEach(card => {
   });
 });
 
-// Contact form submission handling (dummy)
+
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
   contactForm.addEventListener('submit', function(e) {
     e.preventDefault();
-    // In a real site you'd send the data via AJAX or similar
+    
     alert('Thank you for your message, ' + this.name.value + '! I will get back to you soon.');
     this.reset();
   });
 }
 
-// toggle mobile menu
+
 const menuToggle = document.getElementById('menu-toggle');
 const primaryNav = document.getElementById('primary-nav');
 if (menuToggle && primaryNav) {
@@ -38,7 +38,7 @@ if (menuToggle && primaryNav) {
   });
 }
 
-// reveal on scroll using IntersectionObserver
+
 const reveals = document.querySelectorAll('.reveal');
 if ('IntersectionObserver' in window && reveals.length) {
   const obs = new IntersectionObserver((entries) => {
@@ -51,11 +51,11 @@ if ('IntersectionObserver' in window && reveals.length) {
   }, { threshold: 0.12 });
   reveals.forEach(r => obs.observe(r));
 } else {
-  // fallback: show all
+
   reveals.forEach(r => r.classList.add('visible'));
 }
 
-// back to top button
+
 const backToTop = document.getElementById('backToTop');
 if (backToTop) {
   window.addEventListener('scroll', () => {

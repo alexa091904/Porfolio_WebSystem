@@ -4,7 +4,7 @@ body {
   line-height: 1.6;
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   color: #333;
-  padding-top: 80px; /* accommodate fixed header */
+  padding-top: 80px; 
 }
 
 header {
@@ -45,7 +45,7 @@ nav ul li a:hover {
   border-radius: 5px;
 }
 
-/* layout for header container with logo and nav */
+
 .header-container {
   display: flex;
   align-items: center;
@@ -59,7 +59,7 @@ nav ul li a:hover {
   margin: 0;
 }
 
-/* hamburger menu button */
+
 #menu-toggle {
   display: none;
   background: none;
@@ -69,7 +69,7 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
-/* mobile navigation adjustments */
+
 @media (max-width: 768px) {
   #menu-toggle {
     display: block;
@@ -281,7 +281,7 @@ footer {
 .profile-info h3 { margin: 0; font-size: 1.05rem; }
 .profile-info p { margin: 0; color:#666; }
 
-/* reveal on scroll */
+
 .reveal {
   opacity: 0;
   transform: translateY(10px);
@@ -292,7 +292,7 @@ footer {
   transform: none;
 }
 
-/* back to top button */
+
 .back-to-top {
   position: fixed;
   right: 20px;
@@ -340,7 +340,7 @@ footer {
   transform: translateY(-2px);
 }
 
-/* contact form styling */
+
 #contact-form {
   display: flex;
   flex-direction: column;
@@ -379,7 +379,7 @@ footer {
   background: #555;
 }
 
-/* contact form styling */
+
 #contact-form {
   display: flex;
   flex-direction: column;
